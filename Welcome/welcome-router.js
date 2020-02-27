@@ -1,8 +1,8 @@
-const express = require("express")
+const express = require('express')
 
-const router = express.router()
+const router = express.Router()
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
     res.json({
         message: "Welcome to my api"
     })

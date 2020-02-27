@@ -1,9 +1,11 @@
 const express = require('express');
-
-const db = require('./data/dbConfig.js');
+const welcomeRouter = require('./Welcome/welcome-router')
 
 const server = express();
 
 server.use(express.json());
+
+
+server.use("/", welcomeRouter)
 
 module.exports = server;
